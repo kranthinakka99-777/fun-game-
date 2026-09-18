@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>AeroRush AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hud">
+  <div><small>SCORE</small><b id="score">0</b></div>
+  <div><small>BEST</small><b id="best">0</b></div>
+  <div><small>LIVES</small><b id="lives">♥♥♥</b></div>
+</div>
+<main class="game-shell">
+<canvas id="game"></canvas>
+<section id="menu" class="overlay">
+  <div class="card">
+    <div class="eyebrow">AI MOTION RUNNER</div>
+    <h1>AERORUSH <em>AI</em></h1>
+    <p>Dodge the neon barriers. Collect energy. Survive as long as possible.</p>
+    <button id="start">START RUN</button>
+    <div class="controls"><span>← → Move</span><span>↑ / Space Jump</span><span>Swipe on mobile</span></div>
+  </div>
+</section>
+<section id="over" class="overlay hidden">
+  <div class="card">
+    <div class="eyebrow">RUN COMPLETE</div>
+    <h2>GAME OVER</h2>
+    <p>Score <strong id="final">0</strong></p>
+    <p>Best <strong id="finalBest">0</strong></p>
+    <button id="restart">RUN AGAIN</button>
+  </div>
+</section>
+<div class="status"><span id="state">READY</span><span> P = Pause</span></div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
